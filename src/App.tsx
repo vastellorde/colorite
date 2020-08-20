@@ -1,9 +1,9 @@
-import React from "react";
+import React, {FunctionComponent} from "react";
 import "./App.scss";
 import {Toolbar} from "./components/toolbar/toolbar";
 import {BrowserRouter} from "react-router-dom";
 
-function App(): JSX.Element {
+export const App: FunctionComponent = () =>  {
     return (
         <BrowserRouter>
             <main>
@@ -12,5 +12,3 @@ function App(): JSX.Element {
         </BrowserRouter>
     );
 }
-
-export default App;
