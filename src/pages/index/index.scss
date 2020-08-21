@@ -1,0 +1,33 @@
+.hero {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    h1 {
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 82px;
+      color: #000000;
+      max-width: 642px;
+
+      span {
+        color: #EE6C0E;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 23px;
+      color: #333333;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  margin-top: 36px;
+
+  svg {
+    margin-right: 24px;
+  }
+}
