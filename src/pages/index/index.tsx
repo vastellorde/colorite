@@ -1459,8 +1459,15 @@ export const IndexPage: FunctionComponent = () => {
             <div className="wrapper">
               <span className="title">Контакты</span>
               <div className="contacts">
-                <a className="contacts__data">+7 (771) 132 44 49</a>
-                <a className="contacts__data">colorite-dev@mail.ru</a>
+                <a href="tel:+77711324449" className="contacts__data">
+                  +7 (771) 132 44 49
+                </a>
+                <a
+                  href="mailto: colorite-dev@mail.ru"
+                  className="contacts__data"
+                >
+                  colorite-dev@mail.ru
+                </a>
               </div>
             </div>
           </div>
