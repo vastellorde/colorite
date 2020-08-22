@@ -12,7 +12,7 @@
       max-width: 642px;
 
       span {
-        color: #EE6C0E;
+        color: #ee6c0e;
       }
     }
 
@@ -38,7 +38,7 @@
   font-size: 40px;
   line-height: 47px;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #ffffff;
   height: 63px;
   background: #000000;
 }
@@ -131,7 +131,7 @@
         font-size: 20px;
         line-height: 27px;
         letter-spacing: 0.02em;
-        color: #EE6C0E;
+        color: #ee6c0e;
       }
 
       ul {
@@ -188,7 +188,7 @@
         font-weight: bold;
         font-size: 64px;
         line-height: 32px;
-        color: #1C1C1C;
+        color: #1c1c1c;
         margin-bottom: 58px;
       }
 
@@ -218,6 +218,100 @@
           line-height: 21px;
           color: #000000;
         }
+      }
+    }
+  }
+}
+
+.chips {
+  display: flex;
+  flex-direction: column;
+
+  .what-need {
+    display: flex;
+    margin-bottom: 70px;
+
+    & > * {
+      margin-right: 40px;
+    }
+  }
+
+  .cost {
+    display: flex;
+    &__title {
+      font-size: 18px;
+      line-height: 32px;
+      letter-spacing: 0.16em;
+      color: #000000;
+      margin-bottom: 42px;
+    }
+
+    & > * {
+      margin-right: 40px;
+    }
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  button[type="submit"] {
+    height: 37px;
+    background: #000000;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    padding: 8px 60px;
+    max-width: 240px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+
+  .input {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    height: 48px;
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    transition: border-bottom-color 0.5s ease-out;
+
+    input {
+      max-width: 264px;
+    }
+
+    input,
+    textarea {
+      background: 0 0;
+      border: none;
+      color: #2c2c2e;
+      font-size: 16px;
+      line-height: 19px;
+      margin: 0;
+      outline: 0;
+      width: 100%;
+      background: #ffffff no-repeat;
+      border: 0;
+      height: 36px;
+      background-image: linear-gradient(to bottom, #000000, #000000),
+        linear-gradient(to bottom, #fafafa, #fafafa);
+      background-size: 0 2px, 100% 1px;
+      background-position: 50% 100%, 50% 100%;
+      transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+
+      &:focus {
+        outline: none;
+        background-size: 100% 2px, 100% 1px;
       }
     }
   }

@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 94px;
+  background: linear-gradient(0deg, #1c1c1c, #1c1c1c),
+    linear-gradient(
+      99.54deg,
+      #759bff 32.01%,
+      #b98cff 99.06%,
+      rgba(255, 255, 255, 0) 107.74%
+    );
+
+  span {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}
