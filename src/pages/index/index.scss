@@ -1,6 +1,7 @@
 .hero {
   display: flex;
   align-items: center;
+  height: calc(100vh - 48px);
 
   &__text {
     h1 {
@@ -26,8 +27,198 @@
 .social {
   display: flex;
   margin-top: 36px;
+  margin-bottom: 250px;
 
   svg {
     margin-right: 24px;
+  }
+}
+
+.adequate_cost {
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: bold;
+  color: #FFFFFF;
+  height: 63px;
+  background: #000000;
+}
+
+.slider {
+  width: 100%;
+  margin-top: 42px;
+  margin-bottom: 180px;
+
+  img {
+    width: 482px;
+    height: auto;
+  }
+
+  .navigation {
+    margin-top: 60px;
+    text-align: center;
+
+    &-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      button {
+        background: none;
+        outline: none;
+        border: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        &:first-of-type {
+          margin-right: 60px;
+          margin-left: 260px;
+        }
+
+        &:last-of-type {
+          display: flex;
+          align-items: center;
+          font-size: 18px;
+          line-height: 21px;
+          color: #333333;
+          margin-left: 100px;
+        }
+      }
+    }
+  }
+}
+
+.our-service {
+  display: flex;
+  flex-direction: column;
+  &__subtitle {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.16em;
+    color: #333333;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-bottom: 24px;
+  }
+
+  &__subtext {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: #333333;
+  }
+
+  .service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+
+      svg {
+        margin-bottom: 24px;
+      }
+
+      span {
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: 0.02em;
+        color: #EE6C0E;
+      }
+
+      ul {
+        margin-top: 24px;
+        padding-left: 1rem;
+      }
+    }
+  }
+
+  button {
+    margin-top: 64px;
+    align-self: flex-start;
+    border: 0;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    margin-bottom: 125px;
+  }
+}
+
+.brif {
+  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &:last-of-type {
+        align-items: flex-end;
+      }
+
+      .collab {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.16em;
+        color: #000000;
+        margin-bottom: 24px;
+      }
+
+      .write {
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 32px;
+        color: #1C1C1C;
+        margin-bottom: 58px;
+      }
+
+      .need {
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.16em;
+        color: #000000;
+      }
+
+      .title {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: #000000;
+      }
+
+      .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &__data {
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 21px;
+          color: #000000;
+        }
+      }
+    }
   }
 }

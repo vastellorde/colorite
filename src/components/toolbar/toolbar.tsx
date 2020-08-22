@@ -4,7 +4,8 @@ import {Link} from "react-router-dom";
 
 export const Toolbar: FunctionComponent = () => {
     return (
-        <header className="toolbar">
+        <div className="container">
+            <header className="toolbar">
             <span className="logo">
                 <span>
                     Color
@@ -14,22 +15,23 @@ export const Toolbar: FunctionComponent = () => {
                 </span>
                 <span className="blink">]</span>
             </span>
-            <ul>
-                <li>
-                    <Link to="" className="link">Услуги</Link>
-                </li>
-                <li>
-                    <Link to="" className="link">Портфолио</Link>
-                </li>
-                <li>
-                    <Link to="" className="link">О нас</Link>
-                </li>
-                <li>
-                    <Link to="" className="btn">
-                        Оставить заявку <span className="blink">_</span>
-                    </Link>
-                </li>
-            </ul>
-        </header>
+                <ul>
+                    <li>
+                        <Link to="" className="link">Услуги</Link>
+                    </li>
+                    <li>
+                        <Link to="" className="link">Портфолио</Link>
+                    </li>
+                    <li>
+                        <Link to="" className="link">О нас</Link>
+                    </li>
+                    <li>
+                        <Link to="" className="btn">
+                            Оставить заявку <span className="blink">_</span>
+                        </Link>
+                    </li>
+                </ul>
+            </header>
+        </div>
     );
 }
