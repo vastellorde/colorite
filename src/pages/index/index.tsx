@@ -61,7 +61,7 @@ export class IndexPage extends React.Component<{}, any> {
   };
   render() {
     return (
-      <div>
+      <main>
         <div className="container">
           <div className="hero">
             <div className="hero__text">
@@ -72,7 +72,7 @@ export class IndexPage extends React.Component<{}, any> {
               </h1>
               <p>Давайте создадим что-то вместе</p>
             </div>
-            <HeroImage />
+            <HeroImage className="img" />
           </div>
           <div className="social">
             <svg
@@ -162,7 +162,6 @@ export class IndexPage extends React.Component<{}, any> {
               centeredSlides={true}
               autoplay={true}
               breakpoints={this.breakpoints}
-              direction={"horizontal"}
               navigation={this.navigation}
             >
               <SwiperSlide>
@@ -442,7 +441,7 @@ export class IndexPage extends React.Component<{}, any> {
             </form>
           </div>
         </div>
-      </div>
+      </main>
     );
   }
 }

@@ -10,6 +10,8 @@ button {
   border: 0;
   cursor: pointer;
 
+  white-space: nowrap;
+
   &:focus {
     outline: 0;
   }

@@ -1,10 +1,36 @@
+@import './../../common';
+
+main {
+  @include breakpoint(mobile) {
+    max-width: 100vw;
+  }
+}
+
+
 .hero {
   display: flex;
   align-items: center;
 
-  img {
-    width: 516px;
-    height: auto;
+  @include breakpoint(mobile) {
+    flex-direction: column;
+    padding: 0 16px;
+
+    svg {
+      width: 100% !important;
+    }
+
+    &__text {
+      p {
+        font-size: 16px !important;
+        line-height: 19px !important;
+        letter-spacing: 0.16em;
+      }
+      h1 {
+        font-size: 32px !important;
+        line-height: 44px !important;
+        letter-spacing: 0.02em;
+      }
+    }
   }
 
   &__text {
@@ -45,12 +71,33 @@
   color: #ffffff;
   height: 63px;
   background: #000000;
+
+  @include breakpoint(mobile) {
+    font-size: 32px !important;
+    line-height: 44px !important;
+    letter-spacing: 0.02em !important;
+    background: none !important;
+    color: #000000 !important;
+    margin: 0 16px;
+  }
 }
 
 .slider {
   width: 100%;
   margin-top: 42px;
   margin-bottom: 180px;
+
+  @include breakpoint(mobile) {
+    width: calc(100% - 32px);
+    padding: 0 16px;
+    img {
+      width: 100% !important;
+    }
+
+    .navigation {
+      display: none !important;
+    }
+  }
 
   img {
     width: 482px;
@@ -94,6 +141,31 @@
 .our-service {
   display: flex;
   flex-direction: column;
+
+  @include breakpoint(mobile) {
+    padding: 0 16px;
+
+    &__subtitle {
+      font-size: 16px !important;
+      line-height: 19px !important;
+    }
+
+    &__title {
+      font-size: 32px !important;
+      line-height: 44px !important;
+    }
+
+    &__subtext {
+      font-size: 16px !important;
+    }
+
+    .service {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-content: center;
+    }
+  }
+
   &__subtitle {
     font-size: 18px;
     line-height: 21px;
@@ -120,7 +192,7 @@
   .service {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     margin-top: 80px;
 
     &__card {
@@ -165,6 +237,27 @@
   margin-top: 125px;
   display: flex;
   flex-direction: column;
+
+  @include breakpoint(mobile) {
+    padding: 0 16px;
+    .header {
+      .wrapper {
+        .collab {
+          font-size: 16px !important;
+          line-height: 19px !important;
+        }
+
+        .write {
+          font-size: 32px !important;
+          line-height: 44px !important;
+        }
+
+        &:last-of-type {
+          display: none;
+        }
+      }
+    }
+  }
 
   .header {
     display: flex;
@@ -231,6 +324,14 @@
   display: flex;
   flex-direction: column;
 
+  @include breakpoint(mobile) {
+    width: 100%;
+
+    .what-need, .cost {
+      overflow-x: auto;
+    }
+  }
+
   .what-need {
     display: flex;
     margin-bottom: 70px;
@@ -260,6 +361,13 @@ form {
   display: flex;
   flex-direction: column;
   margin-top: 60px;
+
+  @include breakpoint(mobile) {
+    .inputs {
+      flex-direction: column;
+      justify-content: flex-start !important;
+    }
+  }
 
   .inputs {
     display: flex;
@@ -292,6 +400,10 @@ form {
 
     input {
       max-width: 264px;
+
+      @include breakpoint(mobile) {
+        max-width: 100% !important;
+      }
     }
 
     input,
