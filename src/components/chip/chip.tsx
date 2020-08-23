@@ -1,16 +1,13 @@
 import React, { Component } from "react";
-import { ChipState } from "../../models/chip";
+import { ChipProps } from "../../models/chip";
 import "./chip.scss";
 
-export class Chip extends Component<{}, ChipState> {
-  state: ChipState = {
-    isChecked: false,
-  };
+export class Chip extends Component<ChipProps, {}> {
   render() {
     return (
       <button
         onClick={this.onClick}
-        className={this.state.isChecked ? "active" : ""}
+        className={this.props.isChecked ? "active" : ""}
       >
         {this.props.children}
       </button>
@@ -18,8 +15,6 @@ export class Chip extends Component<{}, ChipState> {
   }
 
   onClick = () => {
-    this.setState({
-      isChecked: !this.state.isChecked,
-    });
+    this.props.handleClick(this.props.id, this.props.nestedId);
   };
 }

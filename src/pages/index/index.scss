@@ -1,7 +1,11 @@
 .hero {
   display: flex;
   align-items: center;
-  height: calc(100vh - 48px);
+
+  img {
+    width: 516px;
+    height: auto;
+  }
 
   &__text {
     h1 {
