@@ -12,11 +12,11 @@ export const Toolbar: FunctionComponent = () => {
   return (
     <div className="container">
       <header className="toolbar">
-        <span className="logo">
+        <Link to="/" className="logo">
           <span>Color</span>
           <span>ite</span>
           <span className="blink">]</span>
-        </span>
+        </Link>
         <ul>
           <li>
             <Link to="/services" className="link">

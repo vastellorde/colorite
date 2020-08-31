@@ -99,6 +99,11 @@
     font-size: 32px;
     line-height: 39px;
     letter-spacing: 0.02em;
+    text-decoration: none;
+
+    &:visited {
+      color: #000000;
+    }
 
     span:first-child {
       background-color: #ee6c0e;
