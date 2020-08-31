@@ -12,15 +12,15 @@ export const App: FunctionComponent = () => {
       <main>
         <Toolbar />
         <Switch>
-          <Route path="">
-            <IndexPage />
-          </Route>
-          <Route path="services">
+          <Route path="/services">
             <ServicesPage />
           </Route>
           <Route path="portfolio"></Route>
           <Route path="about_us"></Route>
           <Route path="request"></Route>
+          <Route path="/">
+            <IndexPage />
+          </Route>
         </Switch>
         <Footer />
       </main>

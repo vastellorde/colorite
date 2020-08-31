@@ -1,0 +1,96 @@
+@import "./../../common";
+
+.our-service {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(mobile) {
+    padding: 0 16px;
+
+    &__subtitle {
+      font-size: 16px !important;
+      line-height: 19px !important;
+    }
+
+    &__title {
+      font-size: 32px !important;
+      line-height: 44px !important;
+    }
+
+    &__subtext {
+      font-size: 16px !important;
+    }
+
+    .service {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-content: center;
+    }
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.16em;
+    color: #333333;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-bottom: 24px;
+  }
+
+  &__subtext {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: #333333;
+  }
+
+  .service {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 80px;
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+
+      svg {
+        margin-bottom: 24px;
+      }
+
+      span {
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: 0.02em;
+        color: #ee6c0e;
+      }
+
+      ul {
+        margin-top: 24px;
+        padding-left: 1rem;
+      }
+    }
+  }
+
+  button {
+    margin-top: 64px;
+    align-self: flex-start;
+    border: 0;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    margin-bottom: 125px;
+  }
+}

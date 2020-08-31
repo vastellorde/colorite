@@ -19,7 +19,7 @@ export const Toolbar: FunctionComponent = () => {
         </span>
         <ul>
           <li>
-            <Link to="" className="link">
+            <Link to="/services" className="link">
               Услуги
             </Link>
           </li>
