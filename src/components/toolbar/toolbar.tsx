@@ -48,6 +48,30 @@ export const Toolbar: FunctionComponent = () => {
           <span className="burger__line"></span>
         </button>
       </header>
+      <div className={active ? "menu open" : "menu"}>
+        <ul>
+          <li>
+            <Link to="" className="link">
+              Услуги
+            </Link>
+          </li>
+          <li>
+            <Link to="" className="link">
+              Портфолио
+            </Link>
+          </li>
+          <li>
+            <Link to="" className="link">
+              О нас
+            </Link>
+          </li>
+          <li>
+            <Link to="" className="link">
+              Оставить заявку
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
