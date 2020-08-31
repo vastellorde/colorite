@@ -51,7 +51,7 @@ export const Toolbar: FunctionComponent = () => {
       <div className={active ? "menu open" : "menu"}>
         <ul>
           <li>
-            <Link to="" className="link">
+            <Link to="services" className="link">
               Услуги
             </Link>
           </li>

@@ -4,6 +4,7 @@ import { Toolbar } from "./components/toolbar/toolbar";
 import { Footer } from "./components/footer/footer";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { IndexPage } from "./pages/index";
+import { ServicesPage } from "./pages/services/services";
 
 export const App: FunctionComponent = () => {
   return (
@@ -14,7 +15,9 @@ export const App: FunctionComponent = () => {
           <Route path="">
             <IndexPage />
           </Route>
-          <Route path="services"></Route>
+          <Route path="services">
+            <ServicesPage />
+          </Route>
           <Route path="portfolio"></Route>
           <Route path="about_us"></Route>
           <Route path="request"></Route>
