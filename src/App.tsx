@@ -5,6 +5,7 @@ import { Footer } from "./components/footer/footer";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { IndexPage } from "./pages/index";
 import { ServicesPage } from "./pages/services/services";
+import { PortfolioPage } from "./pages/portfolio/portfolio";
 
 export const App: FunctionComponent = () => {
   return (
@@ -15,7 +16,9 @@ export const App: FunctionComponent = () => {
           <Route path="/services">
             <ServicesPage />
           </Route>
-          <Route path="portfolio"></Route>
+          <Route path="/portfolio">
+            <PortfolioPage />
+          </Route>
           <Route path="about_us"></Route>
           <Route path="request"></Route>
           <Route path="/">

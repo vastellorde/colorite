@@ -24,7 +24,7 @@ export const Toolbar: FunctionComponent = () => {
             </Link>
           </li>
           <li>
-            <Link to="" className="link">
+            <Link to="/portfolio" className="link">
               Портфолио
             </Link>
           </li>
