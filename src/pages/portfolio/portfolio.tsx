@@ -79,28 +79,54 @@ export class PortfolioPage extends React.Component<any, any> {
           <div className="divider"></div>
           <div className="projects">
             <div className="projects__item">
-              <span>Веб разработка</span>
-              <span>Создание сайта для дизайн школы</span>
+              <div className="info">
+                <span className="info__subtitle">Веб разработка</span>
+                <span className="info__title">
+                  Создание сайта для дизайн школы
+                </span>
+              </div>
+              <img className="img" src="FWVMhUa_wbY.png" alt="" />
             </div>
             <div className="projects__item">
-              <span>Веб разработка</span>
-              <span>Создание сайта для дизайн школы</span>
+              <div className="info">
+                <span className="info__subtitle">Веб разработка</span>
+                <span className="info__title">
+                  Создание корпоративного сайта SPOT
+                </span>
+              </div>
+              <img className="img" src="image_8.png" alt="" />
             </div>
             <div className="projects__item">
-              <span>Веб разработка</span>
-              <span>Создание сайта для дизайн школы</span>
+              <div className="info">
+                <span className="info__subtitle">Веб разработка</span>
+                <span className="info__title">Создание многостраничника</span>
+              </div>
+              <img className="img" src="image_7.png" alt="" />
             </div>
             <div className="projects__item">
-              <span>Веб разработка</span>
-              <span>Создание сайта для дизайн школы</span>
+              <div className="info">
+                <span className="info__subtitle">Веб разработка</span>
+                <span className="info__title">Создание многостраничника</span>
+              </div>
+              <img className="img" src="image_7.png" alt="" />
             </div>
             <div className="projects__item">
-              <span>Веб разработка</span>
-              <span>Создание сайта для дизайн школы</span>
+              <div className="info">
+                <span className="info__subtitle">Веб разработка</span>
+                <span className="info__title">
+                  Создание сайта для дизайн школы
+                </span>
+              </div>
+              <img className="img" src="FWVMhUa_wbY.png" alt="" />
             </div>
             <div className="projects__item">
-              <span>Веб разработка</span>
-              <span>Создание сайта для дизайн школы</span>
+              <div className="info">
+                <span className="info__subtitle">Веб разработка</span>
+                <span className="info__title">
+                  Создание корпоративного сайта SPOT
+                </span>
+              </div>
+              <img className="img" src="image_8.png" alt="" />
             </div>
           </div>
         </div>
