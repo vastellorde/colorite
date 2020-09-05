@@ -50,6 +50,7 @@
   grid-template-columns: repeat(auto-fill, minmax(m#{i}n(482px, 100%), 1fr));
   grid-template-rows: repeat(auto-fill, minmax(m#{i}n(482px, 100%), 1fr));
   gap: 36px 36px;
+  margin-bottom: 100px;
 
   @include breakpoint(mobile) {
     width: calc(100% - 32px);
@@ -57,9 +58,6 @@
   }
 
   &__item {
-    &:last-of-type {
-      margin-bottom: 100px;
-    }
     .info {
       top: 24px;
       left: 24px;

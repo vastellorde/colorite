@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./portfolio.scss";
+import { Brif } from "../../components/brif/brif";
 
 export class PortfolioPage extends React.Component<any, any> {
   render() {
@@ -140,6 +141,7 @@ export class PortfolioPage extends React.Component<any, any> {
             </div>
           </div>
         </div>
+        <Brif />
       </main>
     );
   }
