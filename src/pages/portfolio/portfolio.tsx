@@ -85,7 +85,12 @@ export class PortfolioPage extends React.Component<any, any> {
                   Создание сайта для дизайн школы
                 </span>
               </div>
-              <img className="img" src="FWVMhUa_wbY.png" alt="" />
+              <img
+                className="img"
+                src="FWVMhUa_wbY.png"
+                alt=""
+                loading="lazy"
+              />
             </div>
             <div className="projects__item">
               <div className="info">
@@ -94,21 +99,21 @@ export class PortfolioPage extends React.Component<any, any> {
                   Создание корпоративного сайта SPOT
                 </span>
               </div>
-              <img className="img" src="image_8.png" alt="" />
+              <img className="img" src="image_8.png" alt="" loading="lazy" />
             </div>
             <div className="projects__item">
               <div className="info">
                 <span className="info__subtitle">Веб разработка</span>
                 <span className="info__title">Создание многостраничника</span>
               </div>
-              <img className="img" src="image_7.png" alt="" />
+              <img className="img" src="image_7.png" alt="" loading="lazy" />
             </div>
             <div className="projects__item">
               <div className="info">
                 <span className="info__subtitle">Веб разработка</span>
                 <span className="info__title">Создание многостраничника</span>
               </div>
-              <img className="img" src="image_7.png" alt="" />
+              <img className="img" src="image_7.png" alt="" loading="lazy" />
             </div>
             <div className="projects__item">
               <div className="info">
@@ -117,7 +122,12 @@ export class PortfolioPage extends React.Component<any, any> {
                   Создание сайта для дизайн школы
                 </span>
               </div>
-              <img className="img" src="FWVMhUa_wbY.png" alt="" />
+              <img
+                className="img"
+                src="FWVMhUa_wbY.png"
+                alt=""
+                loading="lazy"
+              />
             </div>
             <div className="projects__item">
               <div className="info">
@@ -126,7 +136,7 @@ export class PortfolioPage extends React.Component<any, any> {
                   Создание корпоративного сайта SPOT
                 </span>
               </div>
-              <img className="img" src="image_8.png" alt="" />
+              <img className="img" src="image_8.png" alt="" loading="lazy" />
             </div>
           </div>
         </div>
