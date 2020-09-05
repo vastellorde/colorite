@@ -6,10 +6,18 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { IndexPage } from "./pages/index";
 import { ServicesPage } from "./pages/services/services";
 import { PortfolioPage } from "./pages/portfolio/portfolio";
+import { Helmet } from "react-helmet";
 
 export const App: FunctionComponent = () => {
   return (
     <BrowserRouter>
+      <Helmet>
+        <title>Colorite</title>
+        <meta
+          name="description"
+          content="Дизайн, разработка, и продвижение вашего продукта"
+        />
+      </Helmet>
       <main>
         <Toolbar />
         <Switch>
