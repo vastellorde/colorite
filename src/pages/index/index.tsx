@@ -5,12 +5,12 @@ import { NavigationOptions } from "swiper/types/components/navigation";
 import { ReactComponent as HeroImage } from "./hero.svg";
 import "./index.scss";
 import "swiper/swiper.scss";
-import { ServicesPage } from "../services/services";
-import { Brif } from "../../components/brif/brif";
+import ServicesPage from "../services/services";
+import Brif from "../../components/brif/brif";
 
 NativeSwiper.use([Navigation]);
 
-export class IndexPage extends React.Component {
+class IndexPage extends React.Component {
   breakpoints: {
     [key: number]: SwiperOptions;
   } = {
@@ -45,11 +45,13 @@ export class IndexPage extends React.Component {
       spaceBetween: 36,
     },
   };
+
   navigation: NavigationOptions = {
     nextEl: ".btn-next",
     prevEl: ".btn-prev",
   };
-  render() {
+
+  render(): React.ReactNode {
     return (
       <main>
         <div className="container">
@@ -148,9 +150,9 @@ export class IndexPage extends React.Component {
         <div className="slider">
           <div>
             <Swiper
-              loop={true}
-              centeredSlides={true}
-              autoplay={true}
+              loop
+              centeredSlides
+              autoplay
               breakpoints={this.breakpoints}
               navigation={this.navigation}
             >
@@ -167,7 +169,7 @@ export class IndexPage extends React.Component {
           </div>
           <div className="navigation">
             <div className="navigation-buttons">
-              <button className="btn-prev">
+              <button className="btn-prev" type="button">
                 <svg
                   width="157"
                   height="8"
@@ -181,7 +183,7 @@ export class IndexPage extends React.Component {
                   />
                 </svg>
               </button>
-              <button className="btn-next">
+              <button className="btn-next" type="button">
                 <svg
                   width="157"
                   height="8"
@@ -195,7 +197,7 @@ export class IndexPage extends React.Component {
                   />
                 </svg>
               </button>
-              <button>
+              <button type="button">
                 Смотреть все проекты
                 <svg
                   width="24"
@@ -214,9 +216,11 @@ export class IndexPage extends React.Component {
           </div>
         </div>
         <ServicesPage />
-        <div className="divider"></div>
+        <div className="divider" />
         <Brif />
       </main>
     );
   }
 }
+
+export default IndexPage;

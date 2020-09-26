@@ -1,20 +1,25 @@
-import React, { Component } from "react";
+import React from "react";
 import { ChipProps } from "../../models/chip";
 import "./chip.scss";
 
-export class Chip extends Component<ChipProps, {}> {
-  render() {
+class Chip extends React.Component<ChipProps, any> {
+  onClick = () => {
+    const { id, nestedId, handleClick } = this.props;
+    handleClick(id, nestedId);
+  };
+
+  render(): React.ReactNode {
+    const { isChecked, children } = this.props;
     return (
       <button
+        type="button"
         onClick={this.onClick}
-        className={this.props.isChecked ? "active" : ""}
+        className={isChecked ? "active" : ""}
       >
-        {this.props.children}
+        {children}
       </button>
     );
   }
-
-  onClick = () => {
-    this.props.handleClick(this.props.id, this.props.nestedId);
-  };
 }
+
+export default Chip;

@@ -1,12 +1,16 @@
 import React from "react";
-import { Chip } from "../chip/chip";
+import Chip from "../chip/chip";
 
 import "./brif.scss";
 
-export class Brif extends React.Component<any, any> {
-  state = {
-    checkedChips: [0, 0],
-  };
+class Brif extends React.Component<any, any> {
+  constructor(props: any, context: any) {
+    super(props, context);
+    this.state = {
+      checkedChips: [0, 0],
+    };
+  }
+
   handleChipClick = (index: number, nestedIndex: number) => {
     this.setState((prevState: Readonly<any>) => {
       const temp = [...prevState.checkedChips];
@@ -14,7 +18,9 @@ export class Brif extends React.Component<any, any> {
       return { checkedChips: temp };
     });
   };
-  render() {
+
+  render(): React.ReactNode {
+    const { checkedChips } = this.state;
     return (
       <div className="container">
         <div className="brif">
@@ -42,7 +48,7 @@ export class Brif extends React.Component<any, any> {
           <div className="chips">
             <div className="what-need">
               <Chip
-                isChecked={this.state.checkedChips[0] === 0}
+                isChecked={checkedChips[0] === 0}
                 id={0}
                 nestedId={0}
                 handleClick={this.handleChipClick}
@@ -50,7 +56,7 @@ export class Brif extends React.Component<any, any> {
                 Создание сайта
               </Chip>
               <Chip
-                isChecked={this.state.checkedChips[0] === 1}
+                isChecked={checkedChips[0] === 1}
                 id={0}
                 nestedId={1}
                 handleClick={this.handleChipClick}
@@ -58,7 +64,7 @@ export class Brif extends React.Component<any, any> {
                 Разработка дизайна
               </Chip>
               <Chip
-                isChecked={this.state.checkedChips[0] === 2}
+                isChecked={checkedChips[0] === 2}
                 id={0}
                 nestedId={2}
                 handleClick={this.handleChipClick}
@@ -66,7 +72,7 @@ export class Brif extends React.Component<any, any> {
                 Продвижение бизнеса
               </Chip>
               <Chip
-                isChecked={this.state.checkedChips[0] === 3}
+                isChecked={checkedChips[0] === 3}
                 id={0}
                 nestedId={3}
                 handleClick={this.handleChipClick}
@@ -77,7 +83,7 @@ export class Brif extends React.Component<any, any> {
             <span className="cost__title">Ваш бюджет</span>
             <div className="cost">
               <Chip
-                isChecked={this.state.checkedChips[1] === 0}
+                isChecked={checkedChips[1] === 0}
                 id={1}
                 nestedId={0}
                 handleClick={this.handleChipClick}
@@ -85,7 +91,7 @@ export class Brif extends React.Component<any, any> {
                 Менее 400 USD
               </Chip>
               <Chip
-                isChecked={this.state.checkedChips[1] === 1}
+                isChecked={checkedChips[1] === 1}
                 id={1}
                 nestedId={1}
                 handleClick={this.handleChipClick}
@@ -93,7 +99,7 @@ export class Brif extends React.Component<any, any> {
                 400 — 600 USD
               </Chip>
               <Chip
-                isChecked={this.state.checkedChips[1] === 2}
+                isChecked={checkedChips[1] === 2}
                 id={1}
                 nestedId={2}
                 handleClick={this.handleChipClick}
@@ -101,7 +107,7 @@ export class Brif extends React.Component<any, any> {
                 600 — 1400 USD
               </Chip>
               <Chip
-                isChecked={this.state.checkedChips[1] === 3}
+                isChecked={checkedChips[1] === 3}
                 id={1}
                 nestedId={3}
                 handleClick={this.handleChipClick}
@@ -123,7 +129,7 @@ export class Brif extends React.Component<any, any> {
               </div>
             </div>
             <div className="input">
-              <textarea placeholder="Опишите вашу задачу"></textarea>
+              <textarea placeholder="Опишите вашу задачу" />
             </div>
             <button type="submit">
               Отправить<span className="blink">_</span>
@@ -134,3 +140,5 @@ export class Brif extends React.Component<any, any> {
     );
   }
 }
+
+export default Brif;

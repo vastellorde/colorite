@@ -1,8 +1,8 @@
-import React, { FunctionComponent, useState } from "react";
+import React, { useState } from "react";
 import "./toolbar.scss";
 import { Link } from "react-router-dom";
 
-export const Toolbar: FunctionComponent = () => {
+const Toolbar: React.FC = () => {
   const [active, setActive] = useState(false);
 
   const onBurgerClick = () => {
@@ -40,12 +40,13 @@ export const Toolbar: FunctionComponent = () => {
           </li>
         </ul>
         <button
+          type="button"
           onClick={onBurgerClick}
           className={active ? "burger open" : "burger"}
         >
-          <span className="burger__line"></span>
-          <span className="burger__line"></span>
-          <span className="burger__line"></span>
+          <span className="burger__line" />
+          <span className="burger__line" />
+          <span className="burger__line" />
         </button>
       </header>
       <div className={active ? "menu open" : "menu"}>
@@ -75,3 +76,5 @@ export const Toolbar: FunctionComponent = () => {
     </div>
   );
 };
+
+export default Toolbar;

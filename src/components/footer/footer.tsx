@@ -1,7 +1,7 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
 import "./footer.scss";
 
-export const Footer: FunctionComponent = () => {
+const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="container">
@@ -9,10 +9,12 @@ export const Footer: FunctionComponent = () => {
           <span>Создание сайта</span>
           <span>Разработка дизайна</span>
           <span>Продвижение бизнеса</span>
-          <span></span>
+          <span />
         </div>
         <span>Смотреть все услуги</span>
       </div>
     </footer>
   );
 };
+
+export default Footer;
